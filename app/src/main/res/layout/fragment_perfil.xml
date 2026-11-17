@@ -1,0 +1,35 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false" android:background="@color/rm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="19dp" android:paddingEnd="19dp" android:paddingBottom="32dp">
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Meu perfil" android:textSize="25sp" android:textColor="@color/rm_text" android:textStyle="bold" android:layout_marginTop="18dp"/>
+      <ImageView android:layout_width="140dp" android:layout_height="77dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="center_horizontal" android:layout_marginTop="2dp"/>
+      <FrameLayout android:layout_width="match_parent" android:layout_height="104dp">
+        <TextView android:layout_width="94dp" android:layout_height="94dp" android:text="R" android:textSize="32sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:id="@+id/tvAvatarIniciais" android:gravity="center" android:background="@drawable/rm_avatar_circle" android:layout_gravity="center"/>
+        <ImageView android:layout_width="94dp" android:layout_height="94dp" android:id="@+id/imgPerfilFoto" android:visibility="gone" android:layout_gravity="center" android:scaleType="centerCrop" android:background="@drawable/rm_avatar_circle" android:contentDescription="Foto de perfil"/>
+      </FrameLayout>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Seu nome" android:textSize="22sp" android:textColor="@color/rm_text" android:textStyle="bold" android:id="@+id/tvNomeUsuario" android:gravity="center" android:layout_marginTop="8dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="📍 Localização não informada" android:textSize="13sp" android:textColor="@color/rm_secondary" android:id="@+id/tvLocalizacao" android:gravity="center" android:layout_marginTop="5dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Conte um pouco sobre você..." android:textSize="14sp" android:textColor="@color/rm_secondary" android:id="@+id/tvDescricao" android:gravity="center" android:layout_marginTop="13dp"/>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:background="@drawable/rm_gradient" android:layout_marginTop="19dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:padding="9dp">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center" android:id="@+id/tvTotalAnuncios"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Anúncios" android:textSize="12sp" android:textColor="@color/rm_secondary" android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:padding="9dp">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center" android:id="@+id/tvTotalTrocas"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Para troca" android:textSize="12sp" android:textColor="@color/rm_secondary" android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:orientation="vertical" android:layout_weight="1" android:padding="9dp">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="0" android:textSize="20sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center" android:id="@+id/tvTotalDoacoes"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Para doação" android:textSize="12sp" android:textColor="@color/rm_secondary" android:gravity="center"/>
+        </LinearLayout>
+      </LinearLayout>
+      <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/btnEditarPerfil" android:text="✎  Editar perfil" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false" android:backgroundTint="@color/rm_tile" android:textColor="@color/rm_primary_dark" android:elevation="0dp" android:minHeight="52dp" android:layout_marginTop="17dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Minha conta" android:textSize="18sp" android:textColor="@color/rm_text" android:textStyle="bold" android:layout_marginTop="21dp" android:layout_marginBottom="12dp"/>
+      <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/btnMeusMateriais" android:text="♻  Meus anúncios  ›" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false" android:backgroundTint="@color/rm_tile" android:textColor="@color/rm_primary_dark" android:elevation="0dp" android:minHeight="52dp"/>
+      <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/btnMatches" android:text="⇄  Minhas negociações  ›" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false" android:backgroundTint="@color/rm_tile" android:textColor="@color/rm_primary_dark" android:elevation="0dp" android:minHeight="52dp" android:layout_marginTop="12dp"/>
+      <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/btnConfiguracoes" android:text="⚙  Configurações  ›" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false" android:backgroundTint="@color/rm_tile" android:textColor="@color/rm_primary_dark" android:elevation="0dp" android:minHeight="52dp" android:layout_marginTop="12dp"/>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="118dp" android:layout_height="106dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:importantForAccessibility="no" android:alpha="0.86" android:clickable="false"/>
+</FrameLayout>

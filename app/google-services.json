@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "317038275260",
+    "project_id": "rematch-289b2",
+    "storage_bucket": "rematch-289b2.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:317038275260:android:2c9bc75c92f545d6547eb9",
+        "android_client_info": {
+          "package_name": "com.example.projeto"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBj7-8LJ7c57S7siIU2U_oHsj_BwU2FU1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

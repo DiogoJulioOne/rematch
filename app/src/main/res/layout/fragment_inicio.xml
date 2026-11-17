@@ -1,0 +1,65 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false" android:background="@color/rm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="16dp" android:paddingEnd="16dp" android:paddingBottom="24dp">
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingTop="19dp" android:paddingBottom="8dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="♻ ReMatch" android:textSize="27sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Olá!" android:textSize="24sp" android:textColor="@color/rm_text" android:textStyle="bold" android:id="@+id/tvHomeSaudacao" android:layout_marginTop="27dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vamos dar um novo destino aos materiais hoje?" android:textSize="14sp" android:textColor="@color/rm_secondary" android:layout_marginTop="5dp"/>
+      </LinearLayout>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:background="@drawable/rm_gradient" android:padding="18dp" android:layout_marginTop="14dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reutilizar hoje é cuidar do amanhã." android:textSize="22sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:layout_marginBottom="8dp"/>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Cada material pode começar uma nova história." android:textSize="13sp" android:textColor="@color/rm_secondary"/>
+        <ImageView android:layout_width="145dp" android:layout_height="115dp" android:src="@drawable/eco_sprout_box" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="end" android:layout_marginTop="0dp"/>
+      </LinearLayout>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Categorias de materiais" android:textSize="18sp" android:textColor="@color/rm_text" android:textStyle="bold" android:layout_marginTop="21dp" android:layout_marginBottom="12dp"/>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <LinearLayout android:layout_width="0dp" android:layout_height="104dp" android:orientation="vertical" android:padding="9dp" android:gravity="center" android:background="@drawable/rm_gradient" android:layout_weight="1" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:id="@+id/catPlastico" android:clickable="true" android:focusable="true">
+          <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="♻"
+              android:textSize="27sp"
+              android:textColor="@color/rm_primary_dark"
+              android:textStyle="bold" android:gravity="center"/>
+
+          <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Plástico" android:textSize="12sp"
+              android:textColor="#245C35"
+              android:textStyle="bold" android:gravity="center"
+              android:layout_marginTop="7dp"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+            android:layout_height="104dp"
+            android:orientation="vertical"
+            android:padding="9dp"
+            android:gravity="center"
+            android:background="@drawable/rm_gradient"
+            android:layout_weight="1"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp"
+            android:id="@+id/catPapel"
+            android:clickable="true"
+            android:focusable="true">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="▤" android:textSize="27sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Papel" android:textSize="12sp" android:textColor="#245C35" android:textStyle="bold" android:gravity="center" android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="104dp" android:orientation="vertical" android:padding="9dp" android:gravity="center" android:background="@drawable/rm_gradient" android:layout_weight="1" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:id="@+id/catVidro" android:clickable="true" android:focusable="true">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="♧" android:textSize="27sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Vidro" android:textSize="12sp" android:textColor="#245C35" android:textStyle="bold" android:gravity="center" android:layout_marginTop="7dp"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="0dp" android:layout_height="104dp" android:orientation="vertical" android:padding="9dp" android:gravity="center" android:background="@drawable/rm_gradient" android:layout_weight="1" android:layout_marginEnd="5dp" android:layout_marginStart="5dp" android:id="@+id/catMetal" android:clickable="true" android:focusable="true">
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="▣" android:textSize="27sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Metal" android:textSize="12sp" android:textColor="#245C35" android:textStyle="bold" android:gravity="center" android:layout_marginTop="7dp"/>
+        </LinearLayout>
+      </LinearLayout>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Encontre plástico, papel, vidro e metal para reaproveitar." android:textSize="12sp" android:textColor="@color/rm_secondary" android:layout_marginTop="10dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Materiais disponíveis" android:textSize="18sp" android:textColor="@color/rm_text" android:textStyle="bold" android:layout_marginTop="21dp" android:layout_marginBottom="12dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Anúncios reais publicados pela comunidade." android:textSize="13sp" android:textColor="@color/rm_secondary" android:layout_marginBottom="8dp"/>
+      <ProgressBar android:layout_width="44dp" android:layout_height="44dp" android:id="@+id/homeLoading" android:layout_gravity="center_horizontal" android:indeterminateTint="@color/rm_primary"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ainda não há materiais publicados." android:textSize="14sp" android:textColor="@color/rm_secondary" android:gravity="center" android:id="@+id/homeVazio" android:visibility="gone" android:layout_marginTop="24dp"/>
+      <androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/homeMateriais" android:nestedScrollingEnabled="false" android:clipToPadding="false" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="118dp" android:layout_height="106dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:importantForAccessibility="no" android:alpha="0.86" android:clickable="false"/>
+</FrameLayout>

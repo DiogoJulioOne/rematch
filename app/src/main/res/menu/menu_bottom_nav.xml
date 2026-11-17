@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/navHome" android:icon="@drawable/ic_rm_home" android:title="Início"/>
+ <item android:id="@+id/navExplorar" android:icon="@drawable/ic_rm_search" android:title="Explorar"/>
+ <item android:id="@+id/navAnunciar" android:icon="@drawable/ic_rm_add" android:title="Anunciar"/>
+ <item android:id="@+id/navMensagens" android:icon="@drawable/ic_rm_chat" android:title="Mensagens"/>
+ <item android:id="@+id/navPerfil" android:icon="@drawable/ic_rm_person" android:title="Perfil"/>
+</menu>

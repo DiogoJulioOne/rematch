@@ -1,0 +1,27 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="24dp">
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="Privacidade" android:textColor="@color/rm_text" android:textSize="28sp" android:textStyle="bold"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="Controle como suas informações aparecem no ReMatch" android:textColor="@color/rm_secondary" android:textSize="15sp"/>
+      <!-- VISIBILIDADE DO PERFIL -->
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="35dp" android:background="@drawable/rm_card" android:elevation="2dp" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="👤  Perfil visível" android:textColor="@color/rm_text" android:textSize="16sp" android:textStyle="bold"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Permita que outros usuários visualizem seu perfil." android:textColor="@color/rm_secondary" android:textSize="13sp"/>
+        </LinearLayout>
+        <Switch android:id="@+id/switchPerfilVisivel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumbTint="@color/rm_primary"/>
+      </LinearLayout>
+      <!-- LOCALIZAÇÃO -->
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/rm_card" android:elevation="2dp" android:gravity="center_vertical" android:orientation="horizontal" android:padding="18dp">
+        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+          <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="📍  Mostrar localização" android:textColor="@color/rm_text" android:textSize="16sp" android:textStyle="bold"/>
+          <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Permita que sua localização cadastrada apareça para outros usuários." android:textColor="@color/rm_secondary" android:textSize="13sp"/>
+        </LinearLayout>
+        <Switch android:id="@+id/switchLocalizacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumbTint="@color/rm_primary"/>
+      </LinearLayout>
+      <!-- INFORMAÇÃO -->
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="🔒 Suas preferências de privacidade ficam sob seu controle." android:textColor="@color/rm_secondary" android:textSize="13sp"/>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="93dp" android:layout_height="78dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:alpha="0.44" android:clickable="false" android:importantForAccessibility="no"/>
+</FrameLayout>

@@ -1,0 +1,8 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@color/rm_background" tools:context=".MainActivity">
+  <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" android:background="@color/rm_surface" app:titleTextColor="@color/rm_text" app:navigationIconTint="@color/rm_primary"/>
+  <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+    <include layout="@layout/content_main"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@+id/fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom|end" android:layout_marginEnd="20dp" android:layout_marginBottom="16dp" app:backgroundTint="@color/rm_tile" app:tint="@color/rm_primary" app:srcCompat="@drawable/ic_rm_chat"/>
+  </androidx.coordinatorlayout.widget.CoordinatorLayout>
+  <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigation" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/rm_surface" android:elevation="9dp" app:itemIconTint="@color/rm_nav_colors" app:itemTextColor="@color/rm_nav_colors" app:labelVisibilityMode="labeled" app:menu="@menu/menu_bottom_nav"/>
+</LinearLayout>

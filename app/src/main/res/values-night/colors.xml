@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="rm_primary">#85D795</color>
+    <color name="rm_primary_dark">#4DA966</color>
+    <color name="rm_on_primary">#102C18</color>
+    <color name="rm_surface">#152419</color>
+    <color name="rm_background">#0E1911</color>
+    <color name="rm_card">#1B3022</color>
+    <color name="rm_tile">#263F2B</color>
+    <color name="rm_tile_deep">#36543C</color>
+    <color name="rm_border">#3A5940</color>
+    <color name="rm_text">#F2F8EE</color>
+    <color name="rm_secondary">#BBCABB</color>
+    <color name="rm_muted">#8DA494</color>
+    <color name="rm_danger">#FF988E</color>
+</resources>

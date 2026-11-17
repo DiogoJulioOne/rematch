@@ -1,0 +1,14 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false" android:background="@color/rm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="25dp" android:gravity="center">
+      <ImageView android:layout_width="275dp" android:layout_height="252dp" android:src="@drawable/eco_recycling_bin" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="center_horizontal" android:layout_marginTop="40dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Dê um novo ciclo ao que você não usa mais." android:textSize="27sp" android:textColor="@color/rm_text" android:textStyle="bold" android:gravity="center" android:layout_marginTop="14dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Venda, doe ou troque materiais recicláveis e contribua para um mundo mais sustentável." android:textSize="16sp" android:textColor="@color/rm_secondary" android:gravity="center" android:layout_marginTop="19dp" android:lineSpacingExtra="3dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="●   ○   ○" android:textSize="22sp" android:textColor="@color/rm_primary" android:gravity="center" android:layout_marginTop="23dp"/>
+      <Space android:layout_width="1dp" android:layout_height="28dp"/>
+      <Button android:layout_width="match_parent" android:layout_height="52dp" android:id="@+id/btnIntroComecar" android:text="Começar" android:textSize="15sp" android:textStyle="bold" android:textAllCaps="false" android:backgroundTint="@color/rm_primary" android:textColor="@color/rm_on_primary" android:elevation="0dp" android:minHeight="52dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Materiais que circulam ajudam o planeta." android:textSize="12sp" android:textColor="@color/rm_secondary" android:gravity="center" android:layout_marginTop="15dp"/>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="118dp" android:layout_height="106dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:importantForAccessibility="no" android:alpha="0.86" android:clickable="false"/>
+</FrameLayout>

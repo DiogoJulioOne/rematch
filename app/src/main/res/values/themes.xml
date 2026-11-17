@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <style name="Base.Theme.Projeto" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/rm_primary</item>
+        <item name="colorOnPrimary">@color/rm_on_primary</item>
+        <item name="colorSurface">@color/rm_surface</item>
+        <item name="android:statusBarColor">@color/rm_background</item>
+        <item name="android:navigationBarColor">@color/rm_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="android:fontFamily">sans-serif</item>
+    <item name="colorSecondary">@color/rm_primary</item><item name="colorSecondaryContainer">@color/rm_tile_deep</item><item name="colorOnSecondaryContainer">@color/rm_primary_dark</item></style>
+    <style name="Theme.Projeto" parent="Base.Theme.Projeto"/>
+</resources>

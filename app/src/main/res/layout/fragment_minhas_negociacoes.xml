@@ -1,0 +1,12 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background" android:fillViewport="true" android:clipToPadding="false">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="22dp" android:paddingBottom="24dp">
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Minhas negociações" android:textSize="27sp" android:textColor="@color/rm_text" android:textStyle="bold" android:layout_marginTop="18dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Acompanhe suas propostas de venda, troca e doação." android:textSize="14sp" android:textColor="@color/rm_secondary" android:layout_marginTop="6dp"/>
+      <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:background="@drawable/rm_card" android:orientation="vertical" android:padding="25dp">
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nenhuma negociação por enquanto." android:textSize="15sp" android:textColor="@color/rm_secondary" android:id="@+id/tvMatches" android:gravity="center"/>
+      </LinearLayout>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="93dp" android:layout_height="78dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:alpha="0.44" android:clickable="false" android:importantForAccessibility="no"/>
+</FrameLayout>

@@ -1,0 +1,13 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/rm_background">
+  <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:clipToPadding="false" android:background="@color/rm_background">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="23dp" android:gravity="center">
+      <ImageView android:layout_width="215dp" android:layout_height="210dp" android:src="@drawable/eco_recycle" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="center_horizontal" android:layout_marginTop="62dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ReMatch" android:textSize="40sp" android:textColor="@color/rm_primary_dark" android:textStyle="bold" android:gravity="center" android:layout_marginTop="0dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Reutilize • Troque • Doe" android:textSize="16sp" android:textColor="@color/rm_primary_dark" android:gravity="center" android:layout_marginTop="7dp"/>
+      <ImageView android:layout_width="260dp" android:layout_height="230dp" android:src="@drawable/eco_earth" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="center_horizontal" android:layout_marginTop="14dp"/>
+      <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Um futuro mais verde começa com pequenas escolhas." android:textSize="14sp" android:textColor="@color/rm_secondary" android:gravity="center" android:layout_marginTop="8dp"/>
+    </LinearLayout>
+  </ScrollView>
+  <ImageView android:layout_width="118dp" android:layout_height="106dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="top|right" android:importantForAccessibility="no" android:alpha="0.86" android:clickable="false"/>
+  <ImageView android:layout_width="96dp" android:layout_height="88dp" android:src="@drawable/eco_leaf_corner" android:scaleType="fitCenter" android:contentDescription="Ilustração de sustentabilidade" android:layout_gravity="bottom|left" android:rotation="180" android:importantForAccessibility="no" android:alpha="0.65" android:clickable="false"/>
+</FrameLayout>

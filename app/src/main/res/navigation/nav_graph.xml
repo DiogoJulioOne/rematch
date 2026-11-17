@@ -1,0 +1,70 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/nav_graph" app:startDestination="@id/AberturaFragment">
+  <!-- Apresentação -->
+  <fragment android:id="@+id/AberturaFragment" android:name="com.example.projeto.ui.apresentacao.AberturaFragment" android:label="ReMatch" tools:layout="@layout/fragment_abertura"/>
+  <fragment android:id="@+id/ApresentacaoFragment" android:name="com.example.projeto.ui.apresentacao.ApresentacaoFragment" android:label="ReMatch" tools:layout="@layout/fragment_apresentacao"/>
+  <!-- Autenticação -->
+  <fragment android:id="@+id/LoginFragment" android:name="com.example.projeto.ui.autenticacao.LoginFragment" android:label="Login" tools:layout="@layout/fragment_login">
+    <action android:id="@+id/action_LoginFragment_to_CadastroFragment" app:destination="@id/CadastroFragment"/>
+    <action android:id="@+id/action_LoginFragment_to_InicioFragment" app:destination="@id/InicioFragment"/>
+    <action android:id="@+id/action_LoginFragment_to_RecuperarSenhaFragment" app:destination="@id/RecuperarSenhaFragment"/>
+  </fragment>
+  <fragment android:id="@+id/CadastroFragment" android:name="com.example.projeto.ui.autenticacao.CadastroFragment" android:label="Cadastro" tools:layout="@layout/fragment_cadastro">
+    <action android:id="@+id/action_CadastroFragment_to_LoginFragment" app:destination="@id/LoginFragment"/>
+    <action android:id="@+id/action_CadastroFragment_to_InicioFragment" app:destination="@id/InicioFragment"/>
+  </fragment>
+  <fragment android:id="@+id/RecuperarSenhaFragment" android:name="com.example.projeto.ui.autenticacao.RecuperarSenhaFragment" android:label="Recuperar senha" tools:layout="@layout/fragment_recuperar_senha"/>
+  <!-- Início -->
+  <fragment android:id="@+id/InicioFragment" android:name="com.example.projeto.ui.inicio.InicioFragment" android:label="Início" tools:layout="@layout/fragment_inicio"/>
+  <!-- Materiais -->
+  <fragment android:id="@+id/ExplorarMateriaisFragment" android:name="com.example.projeto.ui.materiais.ExplorarMateriaisFragment" android:label="Buscar materiais" tools:layout="@layout/fragment_explorar_materiais">
+    <action android:id="@+id/action_ExplorarMateriaisFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+    <action android:id="@+id/action_ExplorarMateriaisFragment_to_DetalhesMaterialFragment" app:destination="@id/DetalhesMaterialFragment"/>
+  </fragment>
+  <fragment android:id="@+id/DetalhesMaterialFragment" android:name="com.example.projeto.ui.materiais.DetalhesMaterialFragment" android:label="Detalhes do produto">
+    <argument android:name="produto" app:argType="com.example.projeto.data.Product"/>
+  </fragment>
+  <fragment android:id="@+id/PublicarMaterialFragment" android:name="com.example.projeto.ui.materiais.PublicarMaterialFragment" android:label="Publicar material" tools:layout="@layout/fragment_publicar_material">
+    <action android:id="@+id/action_PublicarMaterialFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+    <action android:id="@+id/action_PublicarMaterialFragment_to_MeusAnunciosFragment" app:destination="@id/MeusAnunciosFragment"/>
+  </fragment>
+  <fragment android:id="@+id/MeusAnunciosFragment" android:name="com.example.projeto.ui.materiais.MeusAnunciosFragment" android:label="Meus anúncios" tools:layout="@layout/fragment_meus_anuncios">
+    <action android:id="@+id/action_MeusAnunciosFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+    <action android:id="@+id/action_MeusAnunciosFragment_to_PublicarMaterialFragment" app:destination="@id/PublicarMaterialFragment"/>
+  </fragment>
+  <!-- Perfil -->
+  <fragment android:id="@+id/PerfilFragment" android:name="com.example.projeto.ui.perfil.PerfilFragment" android:label="Meu perfil" tools:layout="@layout/fragment_perfil">
+    <action android:id="@+id/action_PerfilFragment_to_ConfiguracoesFragment" app:destination="@id/ConfiguracoesFragment"/>
+    <action android:id="@+id/action_PerfilFragment_to_EditarPerfilFragment" app:destination="@id/EditarPerfilFragment"/>
+    <action android:id="@+id/action_PerfilFragment_to_PublicarMaterialFragment" app:destination="@id/PublicarMaterialFragment"/>
+    <action android:id="@+id/action_PerfilFragment_to_ExplorarMateriaisFragment" app:destination="@id/ExplorarMateriaisFragment"/>
+    <action android:id="@+id/action_PerfilFragment_to_MeusAnunciosFragment" app:destination="@id/MeusAnunciosFragment"/>
+    <action android:id="@+id/action_PerfilFragment_to_MinhasNegociacoesFragment" app:destination="@id/MinhasNegociacoesFragment"/>
+  </fragment>
+  <fragment android:id="@+id/EditarPerfilFragment" android:name="com.example.projeto.ui.perfil.EditarPerfilFragment" android:label="Editar perfil" tools:layout="@layout/fragment_editar_perfil">
+    <action android:id="@+id/action_EditarPerfilFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+  </fragment>
+  <!-- Negociações -->
+  <fragment android:id="@+id/MinhasNegociacoesFragment" android:name="com.example.projeto.ui.negociacoes.MinhasNegociacoesFragment" android:label="Minhas negociações" tools:layout="@layout/fragment_minhas_negociacoes">
+    <action android:id="@+id/action_MinhasNegociacoesFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+  </fragment>
+  <!-- Mensagens -->
+  <fragment android:id="@+id/MensagensFragment" android:name="com.example.projeto.ui.mensagens.MensagensFragment" android:label="Mensagens" tools:layout="@layout/fragment_mensagens">
+    <action android:id="@+id/action_MensagensFragment_to_ConversaFragment" app:destination="@id/ConversaFragment"/>
+  </fragment>
+  <fragment android:id="@+id/ConversaFragment" android:name="com.example.projeto.ui.mensagens.ConversaFragment" android:label="Chat" tools:layout="@layout/fragment_conversa">
+    <argument android:name="nomeUsuario" app:argType="string" android:defaultValue=""/>
+  </fragment>
+  <!-- Configurações -->
+  <fragment android:id="@+id/ConfiguracoesFragment" android:name="com.example.projeto.ui.configuracoes.ConfiguracoesFragment" android:label="Configurações" tools:layout="@layout/fragment_configuracoes">
+    <action android:id="@+id/action_ConfiguracoesFragment_to_PerfilFragment" app:destination="@id/PerfilFragment"/>
+    <action android:id="@+id/action_ConfiguracoesFragment_to_LoginFragment" app:destination="@id/LoginFragment"/>
+    <action android:id="@+id/action_ConfiguracoesFragment_to_NotificacoesFragment" app:destination="@id/NotificacoesFragment"/>
+    <action android:id="@+id/action_ConfiguracoesFragment_to_PrivacidadeFragment" app:destination="@id/PrivacidadeFragment"/>
+    <action android:id="@+id/action_ConfiguracoesFragment_to_AjudaFragment" app:destination="@id/AjudaFragment"/>
+    <action android:id="@+id/action_ConfiguracoesFragment_to_TermosFragment" app:destination="@id/TermosFragment"/>
+  </fragment>
+  <fragment android:id="@+id/NotificacoesFragment" android:name="com.example.projeto.ui.configuracoes.NotificacoesFragment" android:label="Notificações" tools:layout="@layout/fragment_notificacoes"/>
+  <fragment android:id="@+id/PrivacidadeFragment" android:name="com.example.projeto.ui.configuracoes.PrivacidadeFragment" android:label="Privacidade" tools:layout="@layout/fragment_privacidade"/>
+  <fragment android:id="@+id/AjudaFragment" android:name="com.example.projeto.ui.configuracoes.AjudaFragment" android:label="Ajuda" tools:layout="@layout/fragment_ajuda"/>
+  <fragment android:id="@+id/TermosFragment" android:name="com.example.projeto.ui.configuracoes.TermosFragment" android:label="Termos de uso" tools:layout="@layout/fragment_termos"/>
+</navigation>
